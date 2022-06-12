@@ -1,0 +1,130 @@
+.title {
+  color:  	#1C1C1C;
+  opacity: 0.95;
+  font-weight: 600;
+}
+
+/*AeroGlass CSS*/
+.aeroBefore{
+    content: '';
+    top: 0; bot tom: 0;
+    left: 0; right: 0;
+    filter: blur(30px);
+    z-index: -1;
+    margin: -30px;
+}
+.aeroGlass{
+    top: 0; bottom: 0;
+    left: 0; right: 0;
+    width: 800px;
+    height: 600px;
+    line-height: 2;
+    margin: auto;
+    border-radius: 5px;
+    background: rgba(240, 255, 255, .3);
+    box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .3);
+    overflow: hidden;
+}
+
+/*Global Setting*/
+.textNameFont {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.textCenter {
+     text-align: center;
+}
+.GlobalPosition {
+     position: flex;
+     margin-top: 120px;
+}
+
+/*Social Link*/
+a {
+  text-decoration: none;
+  font-weight: 560;
+  color:  	#A0522D;
+  opacity: 0.9;
+  transition: opacity .25s ease-in-out;
+  /*fixed*/
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+.socialLink li {
+  font-size: 17px;
+  margin: 5px;
+  color: #444;
+}
+.rightMove {
+  margin-left: 40px;
+}
+
+/*Information Text*/
+.infoText {
+  color:  	   #2F4F4F;
+  margin-top: 80px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.enText {
+  font-size: 12px;
+}
+
+/*Footer*/
+.content {
+  min-height: calc(50vh - 90px);
+}
+.footerText {
+  color:  	  #E8E8E8;
+}
+.footer a {
+  color:  	  #E8E8E8;
+}
+.footer {
+  font-size: 9px;
+  height: 50px;
+}
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    background: 
+url(https://s1.328888.xyz/2022/06/06/WNFa1.jpg) 50%/cover no-repeat #000;
+}
+
+/* Responsive Styles Beta Version */
+/*
+@media only screen and (min-width: 1920px) {
+  .background {
+    background-size: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  .container {
+    width: 90%;
+    margin-top: 50px;
+    padding: 0 30px 30px; 
+  }
+
+  h1 {
+    font-size: 2.25em; 
+    margin-bottom: 20px;
+  }
+
+  .social {
+    margin-top: 20px;
+  }
+
+  .about p {
+    text-align: left;
+    padding-bottom: 15px;
+  }
+  
+  .about p:nth-of-type(1) { 
+    font-size: 1.25em; 
+    text-align: center;
+  }
+}
+*/
