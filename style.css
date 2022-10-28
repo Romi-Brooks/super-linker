@@ -41,7 +41,7 @@
 /*Social Link*/
 a {
   text-decoration: none;
-  font-weight: 560;
+  font-weight: 1000;
   color:  	#0c090c;
   opacity: 0.9;
   transition: opacity .25s ease-in-out;
@@ -69,62 +69,73 @@ a {
   font-size: 12px;
 }
 
-/*Footer*/
-.content {
-  min-height: calc(50vh - 90px);
-}
 .footerText {
-  color:  	  #E8E8E8;
+  position: absolute;
+  bottom: 0;
+  margin-left: calc(50vw - 100px);
+  margin-right: calc(50vw - 100px);
+  text-align: center;
+  font-size: 10px;
+  color:rgb(212, 207, 207);
+  font-weight: bolder;
 }
-.footer a {
-  color:  	  #E8E8E8;
+.footerText  a {
+  text-decoration: none;
+  color:rgb(212, 207, 207);
 }
-.footer {
-  font-size: 9px;
-  height: 50px;
+.footerText  a:hover {
+  color: rgb(201, 191, 182);
 }
-
-
+.footerText  a.active {
+  color: rgb(124, 115, 108);
+}
+.footerText  a.active:hover {
+  color: rgb(184, 169, 169);
+}
+.footerText  a.active:visited {
+  color: rgb(250, 249, 249); 
+}
+.footerText  a:visited {
+  color: rgb(250, 241, 241);
+}
 body {
-    height: 100vh;
-    margin: 0;
-    background: 
-url(./background/3177917.png) 50%/cover no-repeat #000;
+  background: url('./background/3177917.png') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: darkgray;
 }
 
-/* Responsive Styles Beta Version */
-/*
-@media only screen and (min-width: 1920px) {
-  .background {
-    background-size: 100%;
+@media screen and (max-width: 845px) {
+  .aeroGlass{
+    position :static;
+    width: 700px;
+    height: 550px;
   }
 }
 
-@media only screen and (max-width: 600px) {
-
-  .container {
-    width: 90%;
-    margin-top: 50px;
-    padding: 0 30px 30px; 
-  }
-
-  h1 {
-    font-size: 2.25em; 
-    margin-bottom: 20px;
-  }
-
-  .social {
-    margin-top: 20px;
-  }
-
-  .about p {
-    text-align: left;
-    padding-bottom: 15px;
-  }
-  
-  .about p:nth-of-type(1) { 
-    font-size: 1.25em; 
-    text-align: center;
+@media screen and (max-width: 745px) {
+  .aeroGlass{
+    position :static;
+    width: 600px;
+    height: 400px;
   }
 }
-*/
+
+@media screen and (max-width: 645px) {
+  .aeroGlass{
+    position :static;
+    width: 550px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .aeroGlass{
+    margin-top: 5cm;
+    position :static;
+    width: 500px;
+    height: 600px;
+  }
+}
