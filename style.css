@@ -1,5 +1,5 @@
 .title {
-  color:  	#6fbeff;
+  color: #a4d7ff;
   opacity: 0.95;
   font-weight: 600;
 }
@@ -9,7 +9,6 @@
     content: '';
     top: 0; bottom: 0;
     left: 0; right: 0;
-    filter: blur(800px);
     z-index: -1;
     margin: -30px;
 }
@@ -20,8 +19,9 @@
     height: 600px;
     line-height: 2;
     margin: auto;
-    border-radius: 5px;
-    background: rgba(174, 230, 230, 0.3);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    background: rgba(174, 230, 230, 0.1);
     box-shadow: 3px 3px 6px 3px rgba(0, 0, 0, .3);
     overflow: hidden;
 }
@@ -41,7 +41,7 @@
 /*Social Link*/
 a {
   text-decoration: none;
-  font-weight: 1000;
+  font-weight: 800;
   color:  	#0c090c;
   opacity: 0.9;
   transition: opacity .25s ease-in-out;
@@ -50,7 +50,7 @@ a {
   -webkit-transition: opacity .25s ease-in-out;
 }
 .socialLink li {
-  font-size: 17px;
+  font-size: 18px;
   margin: 5px;
   color: #444;
 }
@@ -58,16 +58,46 @@ a {
   margin-left: 40px;
 }
 
-/*Information Text*/
-.infoText {
-  color:  	   #2F4F4F;
-  margin-top: 80px;
-  font-size: 14px;
-  font-weight: 500;
+/* Friends Link*/
+.FriendsLinkFix li{
+    list-style-type: none;
 }
-.enText {
-  font-size: 12px;
+details summary::marker {
+    font-size: medium;
+    color: #444;
 }
+details > summary {
+    font-size: 18px;
+    font-weight: 800;
+    color: #0c090c;
+    margin-left: -16px;
+    cursor: pointer;
+}
+details > a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: normal;
+    color: black;
+    opacity: 0.9;
+    transition: opacity .25s ease-in-out;
+    /*fixed*/
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out;
+}
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+/*!*Information Text*!*/
+/*.infoText {*/
+/*  color:  	   #2F4F4F;*/
+/*  margin-top: 80px;*/
+/*  font-size: 14px;*/
+/*  font-weight: 50;*/
+/*}*/
+/*.enText {*/
+/*  font-size: 12px;*/
+/*}*/
 
 .footerText {
   position: absolute;
@@ -79,7 +109,8 @@ a {
   color:rgb(212, 207, 207);
   font-weight: bolder;
 }
-.footerText  a {
+.footerText a {
+  font-weight: lighter;
   text-decoration: none;
   color:rgb(212, 207, 207);
 }
