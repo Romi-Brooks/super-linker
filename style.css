@@ -34,7 +34,7 @@
      text-align: center;
 }
 .GlobalPosition {
-     position: flex;
+     display: flex;
      margin-top: 120px;
 }
 
